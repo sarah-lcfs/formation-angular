@@ -7,7 +7,7 @@
     }
     <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
     <p>{{ faceSnap.description }}</p>
-    <p>FaceSnap créée le {{ faceSnap.createdAt }}</p>
+    <p>FaceSnap créée le {{ faceSnap.createdAt | date: 'd MMMM yyyy, à HH:mm'  }}</p>
     <p>
         <button [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }" (click)="onSnap()">{{snapButtonText}}</button>
         🩷 {{ faceSnap.snaps }}
