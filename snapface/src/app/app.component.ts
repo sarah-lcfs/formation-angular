@@ -5,7 +5,7 @@ import { FaceSnap } from './models/face-snap';
 @Component({
   selector: 'app-root',
   imports: [
-    FaceSnapComponent
+    FaceSnapComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
