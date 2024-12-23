@@ -19,5 +19,7 @@ export class AppComponent implements OnInit {
     this.mySnap = new FaceSnap("First", "ma description",  "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg", new Date(), 5 );
     this.myOtherSnap = new FaceSnap("Other", "ma description",  "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg", new Date(), 5 );
     this.myLastSnap = new FaceSnap("Last", "ma description",  "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg", new Date(), 5 );
+    this.myOtherSnap.setLocation("à la montagne");
   }
+
 }
