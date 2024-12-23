@@ -12,8 +12,12 @@ import { FaceSnap } from './models/face-snap';
 })
 export class AppComponent implements OnInit {
   mySnap!: FaceSnap;
+  myOtherSnap!: FaceSnap;
+  myLastSnap!: FaceSnap;
 
   ngOnInit(): void {
-    this.mySnap = new FaceSnap("Archibald", "ma description",  "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg", new Date(), 5 );
+    this.mySnap = new FaceSnap("First", "ma description",  "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg", new Date(), 5 );
+    this.myOtherSnap = new FaceSnap("Other", "ma description",  "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg", new Date(), 5 );
+    this.myLastSnap = new FaceSnap("Last", "ma description",  "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg", new Date(), 5 );
   }
 }
