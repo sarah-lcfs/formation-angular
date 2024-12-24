@@ -12,12 +12,4 @@
         <button [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }" (click)="onSnap()">{{snapButtonText}}</button>
         🩷 {{ faceSnap.snaps }}
     </p>
-
-    <p>{{ 4346234.36 | number }}</p>
-    <p>{{ 4346234.36 | number: '1.0-0' }}</p>
-    <p>{{ 0.336 | percent }}</p>
-    <p>{{ 0.336 | percent: '1.0-1' }}</p>
-    <p>{{ 344.36 | currency }}</p>
-    <p>{{ 344.36 | currency: 'EUR' }}</p>
-    <p>{{ 344.36 | currency: 'EUR' : 'code' }}</p>
   </div>
